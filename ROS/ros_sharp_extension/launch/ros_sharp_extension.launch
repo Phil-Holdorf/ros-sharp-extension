@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<include file="$(find file_server)/launch/ros_sharp_communication.launch">
+	</include>
+
+	<node name="list_messages" pkg="ros_sharp_extension" type="list_messages.py"/>
+	<node name="list_messages_in_package" pkg="ros_sharp_extension" type="list_messages_in_package.py"/>
+</launch>
+
